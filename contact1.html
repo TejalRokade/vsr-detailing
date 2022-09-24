@@ -1,0 +1,295 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+#nav{
+padding-top:50px;
+font-size:20px;
+
+}
+nav li a{
+width:120px;
+color:black;
+}
+
+nav li a:hover{
+color:blue;
+//background:yellow;
+}
+.f1{
+align:center;
+}
+
+.c1{
+color:#007bff;
+}
+
+h1{
+color:#007bff;
+}
+
+
+#bb:before{
+	content:"";
+	position:absolute;
+	top:0;
+	width:0;
+	height:50px;
+	border-bottom:3px solid #007bff !important;
+	
+	transition:all 0.4s linear;	
+}
+
+#bb{
+position:relative;
+text-align:center;
+}
+
+#bb:hover:before{
+	width:200PX;	
+}
+.contactdiv{
+	text-align:center;
+	padding:50px;
+}
+
+
+#f1{
+color:white;
+	column-span:all;
+	text-align:center;
+	font-family:myfont;
+	text-shadow:0px 0px 4px blue;
+}
+h1,h4{
+color:black;
+}
+
+/*
+h1,h4{
+color:black;
+	column-span:all;
+	text-align:center;
+	font-family:myfont;
+	text-shadow:3px 3px 4px black;
+}
+*/
+h3{
+color:black;
+	column-span:all;
+	font-family:myfont;
+	text-shadow:3px 3px 4px black;
+}
+
+</style>
+</head>
+<body>
+ 
+<div class="container img1">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+<img src="VSR Logo English.png" style="border:0px" class="img-thumbnail" class="rounded" alt="Cinque Terre" width="200" height="100">
+</div>
+
+
+
+<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+<nav class="navbar navbar-expand-lg sticky-top" id="nav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" style="color:#343a40;background:grey; border:2px solid black" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="h1" >
+          <a class="nav-link"  href="vsr detailing.html">HOME</a>
+        </li>
+        <li class="nav-item" id="h1">
+          <a class="nav-link" href="about1.html">ABOUT US</a>
+        </li>
+        <li class="nav-item" id="h1">
+          <a class="nav-link" href="services1.html">SERVICES</a>
+        </li>
+        <li class="nav-item" id="h1">
+          <a class="nav-link" style="text-decoration:underline;color:blue" href="contact1.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+</div>
+</div>
+</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="contact.jpg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+<br>
+
+
+<div class="container c1">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<h1 align="center">Contact Us Form
+</h1><br>
+<h4 align="center">Please Fill Below Form Correctly So That Our Executive Can Contact You
+</h4><br>
+</div></div>
+</div><BR>
+
+
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Enter your name " placeholder="Enter First Name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Enter your name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">City</label>
+      <input type="text" class="form-control" id="validationCustom03" value="City " required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">State</label>
+      <select class="custom-select" id="validationCustom04" value="Subject" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Mobile Number</label>
+      <input type="Number" class="form-control" id="validationCustom05" value="Mobile No." required>
+      <div class="invalid-feedback">
+        Please provide a valid no..
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="col-md-12 mb-12">
+      <label for="validationCustom06">Subject</label>
+      <input type="text" class="form-control" id="validationCustom06" value="subject " required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    </div><br>
+    
+	<div class="form-row">
+	<div class="col-md-12 mb-12">
+      <label for="validationCustom06">message</label>
+      <input type="text" class="form-control" id="validationCustom06" value="message " required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    </div><br>
+  
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+</div>
+</div><br>
+</div><br><br>
+
+
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"><br>
+<i class="fa fa-home" aria-hidden="true" style="font-size:40px; color:grey"></i> <h3>Location:</h3>
+<br>
+<h6>Ankleshwar-Barhanpur highway
+kingaon,Pincod-425302
+</h6>
+</div>
+
+
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"><br>
+<i class="fa fa-clock-o" aria-hidden="true" style="font-size:40px; color:grey"></i> <h3>Opening Hours:</h3>
+<h6><br>
+All days
+9:00 AM - 8:00 PM
+<br>
+Friday: Closed
+</h6>
+</div>
+
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"><br>
+<i class="fa fa-envelope" aria-hidden="true" style="font-size:40px; color:grey"></i> <h3>Email:</h3>
+<br>
+<h6>vsrdetailing@gmail.com
+</h6>
+</div>
+
+<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"><br>
+<i class="fa fa-phone-square" aria-hidden="true" style="font-size:40px; color:grey"></i> <h3>Call:</h3>
+<br>
+<h6>+91 8698912616<br>
++91 8235353434
+</h6>
+</div>
+</div><hr>
+</div>
+<br>
+
+
+
+
+<footer class="bg-dark" id="f1">
+     <div class="row">
+       <div class="col-12 col-sm-12 col-ms-12 col-lg-12 col-xl-12">
+        <h5 align="center" style="color:white; font-size:35px;">VSR DETAILING</h5>
+        <p align="center">Thank you for being with us.</p>
+        <div class="Copyright">
+        &copy; Copyright <strong><span align="center">VSR DETAILING</span></strong>. All Rights Reserved
+        </div>
+       </div>
+     </div>
+   </footer>
+
+
+
+</body>
+</html>
